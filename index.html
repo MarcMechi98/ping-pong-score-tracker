@@ -6,41 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping Pong Score Keeper</title>
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        .winner {
-            color: green;
-        }
-
-        .loser {
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
 </head>
 
 <body>
 
-    <main>
-        <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
 
-        <!-- Choose how long the game goes -->
-        <select name="" id="play-to">
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
+                        <!-- Card Header -->
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Ping Pong Score Tracker
+                            </p>
+                        </header>
 
-        <!-- Control Buttons -->
-        <button id="p1Button">+1 Player 1</button>
-        <button id="p2Button">+1 Player 2</button>
-        <button id="resetButton">Reset</button>
-    </main>
+                        <!-- Card Text -->
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
+                                </h1>
+                                <p class="subtitle">
+                                    Use the buttons below to track the score.
+                                </p>
+
+                                <!-- Define the maximum score -->
+                                <label for="play-to" class="label is-large is-inline">Max Score:</label>
+                                <div class="select is-rounded">
+                                    <select name="" id="play-to">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Control Buttons -->
+                        <footer class="card-footer">
+                            <button id="p1Button" class="button is-success card-footer-item is-medium">+1 Player
+                                1</button>
+                            <button id="p2Button" class="button is-info card-footer-item is-medium">+1 Player 2</button>
+                            <button id="resetButton" class="button is-warning card-footer-item is-medium">Reset
+                                Score</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+    </section>
 
     <script src="app.js"></script>
 </body>
