@@ -1,6 +1,6 @@
 # Ping-Pong Score Tracker
 
-This is a very simple ping-pong score tracking widget. It uses the CSS framework Bulma to do the styling and modern JavaScript for the logic. This project focusses on learning a bit more about event listeners and DOM elements manipulation. The code is commented and separated in different secctions to make it easier to understand. This project belongs to the Udemy course entitled: "The Web Developer Bootcamp 2022" by Colt Steele.
+This is a very simple ping-pong score tracking widget. It uses the CSS framework Bulma to do the styling and modern JavaScript for the logic. This project focusses on learning a bit more about event listeners and DOM elements manipulation. The code is commented, clean and separated in different sections to make it easier to understand. This project belongs to the Udemy course entitled: "The Web Developer Bootcamp 2022" by Colt Steele.
 
 
 ## Usage
